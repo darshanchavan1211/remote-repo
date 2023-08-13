@@ -11,8 +11,10 @@ phases:
         commands:
             - echo "this is build section inside buildspec.yml file"
             - echo "we will run some tests"
-            #- grep -Fq "AWS-CICD" index.html
     post_build:
         commands:
             - echo "we are in the post build phase"
 
+artifacts:
+  files:
+    - '**/*'
