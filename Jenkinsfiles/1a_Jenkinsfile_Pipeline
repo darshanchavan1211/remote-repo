@@ -14,7 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'This is Deploy Stage.'
-                echo 'This line is for webhook'
+                echo 'This line is for test-webhook'
             }
         }
     }
