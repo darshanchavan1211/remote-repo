@@ -15,7 +15,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 dir("${env.WORKSPACE}/java-tomcat-sample"){
                     sh "pwd"
                     sh 'mvn clean install -f pom.xml'
